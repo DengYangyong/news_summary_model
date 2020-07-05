@@ -16,25 +16,25 @@ python版本为python3.7，系统为ubuntu 18.04。
 
 news_summary_model/
 
-├── data
-│   ├── processed_data                               // 预处理好的文件，包括word2id，id2weight，id2embed等，保存为json或pickle对象备用
-│   ├── raw_data                                     // 汉语新闻语料文件，用于模型测试
-│   ├── stopwords                                    // 停用词表
-│   └── word2vec                                     // 训练好的word2vec
-├── font                                             // word2vec可视化需要的字体和保存的可视化结果
-│   ├── SimHei.ttf
-│   └── tsne.png
-├── news_summary.py                                  // 自动摘要模型模块
-├── README.md
-├── requirements.txt			             // 需要安装的依赖包
-└── utils
-    ├── build_w2v.py                                 // 训练word2vec和可视化
-    ├── config.py                                    // 全部文件的路径
-    ├── data_loader.py                               // 数据预处理模块，分词和准备word2id，id2weight，id2embed等
-    ├── data_utils.py                                // 数据处理函数的模块，包括分词、划分句子、句子id化等 
-    ├── multi_proc_utils.py                          // 分词时进行多进程处理的函数
-    ├── __pycache__
-    └── SIF_embedding.py                             // 计算SIF句子向量的函数
+    ├── data
+    │   ├── processed_data                               // 预处理好的文件，包括word2id，id2weight，id2embed等，保存为json或pickle对象备用
+    │   ├── raw_data                                     // 汉语新闻语料文件，用于模型测试
+    │   ├── stopwords                                    // 停用词表
+    │   └── word2vec                                     // 训练好的word2vec
+    ├── font                                             // word2vec可视化需要的字体和保存的可视化结果
+    │   ├── SimHei.ttf
+    │   └── tsne.png
+    ├── news_summary.py                                  // 自动摘要模型模块
+    ├── README.md
+    ├── requirements.txt			             // 需要安装的依赖包
+    └── utils
+        ├── build_w2v.py                                 // 训练word2vec和可视化
+        ├── config.py                                    // 全部文件的路径
+        ├── data_loader.py                               // 数据预处理模块，分词和准备word2id，id2weight，id2embed等
+        ├── data_utils.py                                // 数据处理函数的模块，包括分词、划分句子、句子id化等 
+        ├── multi_proc_utils.py                          // 分词时进行多进程处理的函数
+        ├── __pycache__
+        └── SIF_embedding.py                             // 计算SIF句子向量的函数
 
 ## 四、项目运行
 
